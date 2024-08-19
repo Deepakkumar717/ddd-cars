@@ -27,6 +27,26 @@ const Register = () => {
           />
         </div>
         <div className="form-group">
+          <label>Password:</label>
+          <input
+            type="password"
+            placeholder="Create a password"
+            required
+            minLength="8" // Minimum 8 characters
+            title="Password must be at least 8 characters long"
+          />
+        </div>
+        <div className="form-group">
+          <label>Confirm Password:</label>
+          <input
+            type="password"
+            placeholder="Confirm your password"
+            required
+            minLength="8" // Minimum 8 characters
+            title="Password must be at least 8 characters long"
+          />
+        </div>
+        <div className="form-group">
           <label>Email:</label>
           <input
             type="email"
