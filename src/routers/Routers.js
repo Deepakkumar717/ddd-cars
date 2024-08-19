@@ -11,6 +11,7 @@ import Login from '../components/Login'; // Import the Login component
 import Register from '../components/Register';
 import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
+import Profile from "../components/profile";
 
 const Routers = () => {
   return (
@@ -26,6 +27,7 @@ const Routers = () => {
       <Route path="/book-service" element={<BookService />} /> {/* New Route for BookService */}
       <Route path="/login" element={<Login/>} /> {/* Add the login route */}
       <Route path="/register" element={<Register/>} />
+      <Route path="/profile" element={<Profile/>} />
       <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

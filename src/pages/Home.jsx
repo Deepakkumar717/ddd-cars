@@ -1,5 +1,4 @@
 import React from "react";
-
 import HeroSlider from "../components/UI/HeroSlider";
 import Helmet from "../components/Helmet/Helmet";
 import StoreList from "../components/Store/StoreList"; // Correct import for StoreList
