@@ -1,11 +1,27 @@
 import React from 'react';
 import '../styles/register.css';  // Ensure the path is correct based on your folder structure
+import { saveUserData } from '../styles/user';  // Import the function from user.js
 
 const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
+    
+    // Gather form data
+    const formData = new FormData(e.target);
+    const userData = {
+      name: formData.get('name'),
+      phone: formData.get('phone'),
+      password: formData.get('password'),
+      email: formData.get('email'),
+      address: formData.get('address'),
+    };
+
+    // Save user data
+    saveUserData(userData);
+
     // Display the popup message
     alert("Registration Successful!");
+
     // Optionally, you can also reset the form here if needed
     e.target.reset();
   };
@@ -18,6 +34,7 @@ const Register = () => {
           <label>Name:</label>
           <input
             type="text"
+            name="name"
             placeholder="Enter your name"
             required
             pattern="[A-Za-z\s]{1,50}" // Allows only letters and spaces, up to 50 characters
@@ -28,6 +45,7 @@ const Register = () => {
           <label>Phone Number:</label>
           <input
             type="tel"
+            name="phone"
             placeholder="Enter your phone number"
             required
             pattern="[0-9]{10}" // Only allows exactly 10 digits
@@ -38,6 +56,7 @@ const Register = () => {
           <label>Password:</label>
           <input
             type="password"
+            name="password"
             placeholder="Create a password"
             required
             minLength="8" // Minimum 8 characters
@@ -48,6 +67,7 @@ const Register = () => {
           <label>Confirm Password:</label>
           <input
             type="password"
+            name="confirmPassword"
             placeholder="Confirm your password"
             required
             minLength="8" // Minimum 8 characters
@@ -58,6 +78,7 @@ const Register = () => {
           <label>Email:</label>
           <input
             type="email"
+            name="email"
             placeholder="Enter your email"
             required
             pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" // Basic email validation pattern
@@ -67,6 +88,7 @@ const Register = () => {
         <div className="form-group">
           <label>Address:</label>
           <textarea
+            name="address"
             placeholder="Enter your address"
             required
             maxLength="200" // Limits the address to 200 characters
