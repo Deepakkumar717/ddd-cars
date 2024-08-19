@@ -12,6 +12,7 @@ import Register from '../components/Register';
 import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
 import Profile from "../components/profile";
+import BikeDetails from "../components/bikedetails";
 
 const Routers = () => {
   return (
@@ -28,6 +29,8 @@ const Routers = () => {
       <Route path="/login" element={<Login/>} /> {/* Add the login route */}
       <Route path="/register" element={<Register/>} />
       <Route path="/profile" element={<Profile/>} />
+      <Route path="/bikedetails" element={<BikeDetails/>} />
+
       <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
