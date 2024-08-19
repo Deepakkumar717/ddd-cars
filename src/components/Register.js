@@ -2,10 +2,18 @@ import React from 'react';
 import '../styles/register.css';  // Ensure the path is correct based on your folder structure
 
 const Register = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Display the popup message
+    alert("Registration Successful!");
+    // Optionally, you can also reset the form here if needed
+    e.target.reset();
+  };
+
   return (
     <div className="register-container">
       <h2>Register</h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Name:</label>
           <input

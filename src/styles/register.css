@@ -63,3 +63,8 @@ button {
 button:hover {
   background-color: #e64a19; /* Darker orange on hover */
 }
+.success-message {
+  color: green;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
