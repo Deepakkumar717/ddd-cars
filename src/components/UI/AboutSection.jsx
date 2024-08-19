@@ -18,14 +18,13 @@ const AboutSection = ({ aboutClass }) => {
           <Col lg="6" md="6">
             <div className="about__section-content">
               <h4 className="section__subtitle">About Us</h4>
-              <h2 className="section__title">Welcome to car rent service</h2>
+              <h2 className="section__title">Welcome to  Bike service</h2>
               <p className="section__description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptatum blanditiis esse accusantium dignissimos labore
-                laborum. Veniam, corporis mollitia temporibus, in quaerat vero
-                deleniti amet dolorem repudiandae, pariatur nam dolore! Impedit
-                neque sit ad temporibus quam similique dolor ipsam praesentium
-                sunt.
+               DDD's Bike Service Center is a specialized facility that provides comprehensive maintenance,
+               repair, and customization services for motorcycles. Staffed by skilled technicians, 
+               these centers use advanced diagnostic tools and genuine spare parts to ensure the safety
+               and reliability of bikes. They offer routine services such as oil changes, brake inspections, 
+               and tire replacements, as well as expert advice on maintenance and upgrades.
               </p>
 
               <div className="about__section-item d-flex align-items-center">

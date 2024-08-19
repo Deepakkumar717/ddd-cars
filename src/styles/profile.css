@@ -1,12 +1,4 @@
 /* src/styles/profile.css */
-
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: #000; /* Black background for the entire page */
-}
-
 .profile-container {
     display: flex;
     flex-direction: column;
